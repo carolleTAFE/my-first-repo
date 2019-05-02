@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css"></style>
+	<script type="text/javascript">
+		var userName;
+		userName = prompt("Please enter your name","");
+		document.write("<h1>Welcome to our website, " + userName + "!</h1>");
+	</script>	 
+	<style>
+		* {box-sizing:border-box}
+		body {font-family: Verdana,sans-serif;}
+		.button {
+		    border: none;
+		    color: grey;
+		    padding: 14px 28px;
+		    font-size: 16px;
+		    cursor: pointer;
+		    margin-bottom: 12px;
+		}
+
+		.mySlides {display:none}
+
+		.slideshow-container {
+		  position: relative;
+		  margin: auto;
+		}
+
+		/* Caption text */
+		.text {
+		  color: #f2f2f2;
+		  font-size: 15px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  bottom: 8px;
+		  width: 100%;
+		  text-align: center;
+		}
+
+		/* The dots/bullets/indicators */
+		.dot {
+		  height: 13px;
+		  width: 13px;
+		  margin: 0 2px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
+
+		.active {
+		  background-color: #717171;
+		}
+
+		/* Fading animation */
+		.fade {
+		  -webkit-animation-name: fade;
+		  -webkit-animation-duration: 1.5s;
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		/* On smaller screens, decrease text size */
+		@media only screen and (max-width: 300px) {
+		  .text {font-size: 11px}
+		}
+	</style> 
+</head>
+<body>
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+			<img src="https://www.freewebheaders.com/wordpress/wp-content/gallery/floral-abstract/colorful-floral-abstract-website-header.jpg" style="width:100%">
+			<div class="text">Abstract</div>
+		</div>
+
+		<div class="mySlides fade">
+			<img src="https://www.freewebheaders.com/wordpress/wp-content/gallery/birds/amazing-beautiful-colorful-bird-website-header.jpg" style="width:100%">
+			<div class="text">Bird</div>
+		</div>
+
+		<div class="mySlides fade">
+		 	<img src="https://www.freewebheaders.com/wordpress/wp-content/gallery/birds/awesome-colorful-macaw-bird-website-header.jpg" style="width:100%">
+		 	<div class="text">Another Bird</div>
+		</div>
+	</div>
+	<br>
+	<div style="text-align:center">
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+	</div>
+	<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		    var i;
+		    var slides = document.getElementsByClassName("mySlides");
+		    var dots = document.getElementsByClassName("dot");
+		    for (i = 0; i < slides.length; i++) {
+		       slides[i].style.display = "none";  
+		    }
+		    slideIndex++;
+		    if (slideIndex> slides.length) {slideIndex = 1}    
+		    for (i = 0; i < dots.length; i++) {
+		        dots[i].className = dots[i].className.replace(" active", "");
+		    }
+		    slides[slideIndex-1].style.display = "block";  
+		    dots[slideIndex-1].className += " active";
+		    setTimeout(showSlides, 2000); // Change image every 2 seconds
+		}
+	</script>
+
+	<div>
+		<button class="button"><span>Tafe NSW </span></button>
+		<button class="button"><span>Ultimo IT </span></button>
+		<button class="button youtube" onmouseover="document.bgColor='#ff0'" onmouseout="document.bgColor='transparent'" onclick="hidefunction()"><span>YouTube </span></button>
+	</div>
+	<script type="text/javascript">
+		function hidefunction() {
+	    	var x = document.getElementsByClassName("youtube");
+	 		for (i = 0; i < x.length; i++) {
+		       x[i].style.display = "none";  
+		    }
+		}
+	</script>
+
+	<h3>
+		<script type="text/javascript">
+			document.write(userName + " has <strong>" + userName.length + "</strong> characters<br>");
+			document.write(userName + " to lower case <strong>" + userName.toLowerCase()  + "</strong><br>");
+			document.write(userName + " to upper case <strong>" + userName.toUpperCase()  + "</strong><br>");
+			document.write(userName + " character at position 4 is <strong>" + userName.charAt(4)  + "</strong><br>");
+			document.write(userName + " returns letters from position 3 to 7 (not inclusive) <strong>" + userName.substring(3,7) + "</strong><br>");
+		</script>
+	</h3>
+	<div>
+		<p>Cupcake ipsum dolor sit amet jujubes sugar plum apple pie chocolate. Bear claw fruitcake caramels wafer pastry caramels macaroon. Jelly-o oat cake sugar plum sweet lemon drops halvah lemon drops. Marshmallow powder chocolate bar wafer chocolate bar. Danish tart bear claw fruitcake cookie jelly beans. Sesame snaps macaroon chupa chups. Dessert donut pie. Croissant apple pie pudding lemon drops pie marzipan. Tiramisu gingerbread chocolate bar candy canes marzipan tootsie roll chocolate cake fruitcake. Cotton candy chocolate croissant toffee fruitcake cheesecake toffee. Chupa chups topping lollipop danish chocolate chocolate cake jelly-o. Lollipop pie sweet fruitcake danish jujubes. Topping apple pie danish tiramisu apple pie bear claw. Wafer carrot cake fruitcake apple pie chocolate bar muffin apple pie. Marzipan tart sugar plum jelly-o sugar plum fruitcake jelly beans cheesecake. Carrot cake lemon drops cotton candy. Icing sweet roll toffee muffin donut macaroon. Tiramisu croissant cheesecake.</p>
+		<p>Candy canes cake pudding cookie lollipop chocolate cake pudding. Biscuit dessert halvah. Topping jelly macaroon toffee. Marzipan croissant bear claw candy canes candy chocolate bar tootsie roll. Biscuit lemon drops cake chocolate chocolate icing carrot cake candy lollipop. Liquorice oat cake bonbon gummies jelly-o halvah. Jelly beans bonbon cupcake pie chocolate bar gummies sweet roll cheesecake. Pudding chupa chups jelly-o jujubes cheesecake pastry ice cream liquorice. Powder candy canes pudding chupa chups fruitcake toffee. Oat cake cotton candy cotton candy bonbon muffin chocolate cake candy danish.</p>
+	</div>
+	
+	<button class="button" onclick="callthatfunction()"><span>Favorite band?</span></button>
+	<script type="text/javascript">
+	 	function callthatfunction(){
+			document.write("What are your three favorite musical groups?<br />");
+			var favGroups = new Array();
+	  		for (var i=0; i<3; i++) {
+	    		var inputGroups=prompt("My favorite musical groups are: ", "");
+	    		favGroups[i] = inputGroups;
+	    		document.write(i+1+". "+ favGroups[i]+"<br />");
+			}
+		}
+	</script>
+	</br>
+	<a href="#" onmouseover="alert('Not today, folks!')" ;>Access YouTube!</a>
+
+</body>
+</html>
